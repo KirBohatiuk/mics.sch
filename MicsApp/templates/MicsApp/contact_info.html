@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% extends 'MicsApp/base.html' %}
+  <meta charset="UTF-8">
+  <title>Mics.sch contacts</title>
+  {% load static %}
+</head>
+<body>
+  {% block content %}
+    <div class="contact_bg">
+      <div class="divo">
+        <img class="img_info" src="{% static 'MicsApp/info_pick.png' %}">
+      </div>
+      <div class="divo">
+        <h5>Контактна інформація:</h5>
+        <p>
+        Номер телефону: +380982372906<br>
+        <a href="https://t.me/ChuvaievIgor">Telegram</a><br>
+        <a href="https://www.instagram.com/mics.sch?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a><br>
+        <a href="">YouTube</a><br>
+        <a href="">Viber</a><br>
+        <a href="mailto:micscommunications@gmail.com">Gmail</a>
+      </p>
+      </div>
+    <div class="div_sponsor">
+      Працюємо разом?<br>
+      Чи у вас є унікальна ідея, якою ви хочете поділитися зі мною? Хочете створювати спонсоровані публікації разом?<br>
+      Мені цікаво розширювати контент блогу, тому я з радістю співпрацюватиму з вами. <br>Ознайомтеся з останніми проектами та зв'яжіться зі мною, щоб запланувати зустріч.
+    </div>
+    </div>
+
+  {% endblock %}
+</body>
+</html>

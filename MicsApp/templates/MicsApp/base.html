@@ -4,54 +4,16 @@
   {% load static %}
   <meta charset="UTF-8">
   <title>Mics.sch</title>
-  <style>
-    #header{
-      background-color: black;
-      margin: 1px;
-      background-image: url("{% static 'MicsApp/changed.png' %}");
-      background-size: contain;
-      background-repeat: no-repeat; /* Prevent the image from repeating */
-      background-position: center;
-      height: 150px;
-      width: calc(100% - 2px);
-    }
-    .navbar {
-      width: calc(25% - 2px);
-      background-color: gray;
-      height: 100px;
-      float: left;
-      margin: 1px;
-      line-height: 100px;
-      text-align: center;
-      font-size: 26px;
-      color: white;
-      cursor: pointer;
-    }
-    .body_img{
-      margin: 1px;
-      background-image: url("{% static 'MicsApp/1aa19b2e443cc366fd0773098ee9327c.jpeg' %}");
-      background-size: cover;
-      background-repeat: no-repeat; /* Prevent the image from repeating */
-      background-position: center;
-      height: 550px;
-      width: calc(100% - 2px);
-      clear: both;
-      text-align: center;
-      align-content: space-evenly;
-      font-size: 36px;
-      font-style: italic;
-      color: white;
-    }
-    .navbar:hover{
-      background-color: #0056b3;
-    }
-  </style>
+  <link rel="stylesheet" href="{% static 'MicsApp/Style.css' %}">
 </head>
 <body>
   <div id="header"></div>
-  <div class="navbar" onclick="window.location.href=''">Головна</div>
+  <div class="navbar" onclick="window.location.href='{% url 'homepage' %}'">Головна</div>
   <div class="navbar" onclick="window.location.href=''">Блог</div>
   <div class="navbar" onclick="window.location.href=''">Онлайн-запис</div>
-  <div class="navbar" onclick="window.location.href=''">Спонсори</div>
+  <div class="navbar" onclick="window.location.href='{% url 'contact-info' %}'">Контактна інформація</div>
+  {% block content %}
+  {% endblock %}
+
 </body>
 </html>

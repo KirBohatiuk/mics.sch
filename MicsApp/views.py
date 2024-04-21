@@ -15,4 +15,4 @@ def assign_lessons(request):
 
 
 def contact_info(request):
-    return HttpResponse('Contacts info for mics.sch')
+    return render(request, 'MicsApp/contact_info.html')
