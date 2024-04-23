@@ -9,8 +9,8 @@
 <body>
   <div id="header"></div>
   <div class="navbar" onclick="window.location.href='{% url 'homepage' %}'">Головна</div>
-  <div class="navbar" onclick="window.location.href=''">Блог</div>
-  <div class="navbar" onclick="window.location.href=''">Онлайн-запис</div>
+  <div class="navbar" onclick="window.location.href='{% url 'blog' %}'">Блог</div>
+  <div class="navbar" onclick="window.location.href='{% url 'assign-lesson' %}'">Онлайн-запис</div>
   <div class="navbar" onclick="window.location.href='{% url 'contact-info' %}'">Контактна інформація</div>
   {% block content %}
   {% endblock %}

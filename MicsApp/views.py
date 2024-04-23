@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http.response import HttpResponse
+from .models import Post
 
 
 def homepage(request):
@@ -7,11 +8,12 @@ def homepage(request):
 
 
 def blog(request):
-    return HttpResponse('Blog for mics.sch')
+    posts = Post.objects.order_by('-creation_date')[:2]
+    return render(request, 'MicsApp/blog.html', {'posts': posts})
 
 
-def assign_lessons(request):
-    return HttpResponse('Assign lessons for mics.sch')
+def assign_lesson(request):
+    return render(request, 'MicsApp/assign_lesson.html')
 
 
 def contact_info(request):

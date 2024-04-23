@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% extends 'MicsApp/base.html' %}
+  {% load static %}
+  <meta charset="UTF-8">
+  <title>Mics.sch</title>
+  <style>
+  </style>
+</head>
+<body>
+  {% block content %}
+    <div class="blog_body_bg_img">
+      <div class="blog_post_bg">
+        {% for post in posts %}
+          <div class="blog_post_img"><img src="{{ post.image.url }}"></div>
+          <div class="blog_post_text_block">
+            <div class="blog_avatar_and_username"><img class="avatar_img" src="{{ post.owner.profile.avatar.url }}">{{ post.owner.username }}</div>
+            <div class="separation_line"></div>
+            <div class="blog_text_topic">
+              <a>{{ post.text }}</a>
+            </div>
+            <div class="blog_text_main">
+              <a>{{ post.text }}</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endblock %}
+</body>
+</html>
