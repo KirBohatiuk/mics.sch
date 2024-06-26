@@ -1,31 +1,76 @@
-#header{
-  background-color: black;
-  margin: 1px;
-  background-image: url("changed.png");
-  background-size: contain;
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: center;
-  height: 125px;
-  width: calc(100% - 2px);
+.header{
+  margin: 30px 300px 0px 300px;
+  border-bottom: 1px solid midnightblue;
+  height: 100px;
+
 }
 
 
-.navbar {
-  width: calc(25% - 2px);
-  background-color: black;
-  height: 50px;
+.logo_header{
+  width: 10%;
+  height: 100%;
+  background-image: url("logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   float: left;
-  margin: 1px;
-  line-height: 50px;
-  text-align: center;
-  font-size: 26px;
-  color: white;
   cursor: pointer;
 }
 
 
-.navbar:hover{
-  background-color: darkgoldenrod;
+.blank{
+  height: 100%;
+  width: 60%;
+  float: left;
+}
+
+.login {
+  float: left;
+  height: 100%;
+  width: 10%;
+  align-items: center;
+  align-content: center;
+}
+
+
+.login_pick{
+  background-image: url("login3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 50%;
+  cursor: pointer;
+  line-height: 120px;
+  text-align: right;
+}
+
+
+.login_pick:hover{
+  color: mediumpurple;
+}
+
+
+.brand_header{
+  width: 20%;
+  height: 100%;
+  float: left;
+  color: rgb(2, 0, 79);
+  font-size: 38px;
+  font-weight: bold;
+
+}
+
+
+body{
+  background-color: rgb(238, 234, 246);
+}
+
+
+.navbar {
+  text-align: center;
+  height: 16px;
+  width: 100%;
+  color: rgb(2, 0, 79);
+  margin: 2px;
 }
 
 
@@ -62,33 +107,49 @@
 
 
 .blog_post_bg{
-  margin: 100px 600px 100px 100px;
-  background-color: rgba(255, 255, 255, 0.2);
-  height: 670px;
-  color: orange;
+  margin: 50px 300px 50px 300px;
+  color: rgb(2, 0, 79);
   align-content: start;
 }
 
 
 .blog_post_img{
-  margin: 20px 0px 10px 20px;
+  margin: 20px 0px 20px 20px;
   background-color: white;
-  height: 300px;
-  width: 37%;
+  height: 400px;
+  width: 50%;
   float: left;
   box-sizing: border-box;
-  border-right: 2px solid black;
+  border: 1px solid darkgray;
+}
+
+
+.indiv_resized{
+  background-image: url("indiv1.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+.group_resized{
+  background-image: url("gruppa.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 
 .blog_post_text_block{
   margin: 20px 20px 10px 0px;
-  background-color: rgba(255, 255, 255, 0.1);
-  height: 300px;
-  width: calc(63% - 40px);
+  height: 400px;
+  width: calc(50% - 40px);
   float: left;
   align-content: start;
   text-align: left;
+  box-sizing: border-box;
+  border: 1px solid darkgray;
+  border-left: 0px;
 }
 
 .separation_line{
@@ -97,16 +158,22 @@
 
 .blog_text_topic{
   text-align: justify;
-  text-indent: 15px;
-  margin: 20px 20px 10px 20px;
+  font-size: 24px;
+  margin: 80px 50px 10px 50px;
+}
+
+
+.blog_separation_line{
+  margin-left: 50px;
+  margin-right: 50px;
+  border-bottom: 1px solid darkgray;
 }
 
 
 .blog_text_main{
   text-align: justify;
-  text-indent: 15px;
-  margin: 10px 20px 10px 20px;
-  font-size: 24px;
+  margin: 20px 50px 10px 50px;
+  font-size: 18px;
 }
 
 
@@ -146,13 +213,14 @@ p{
 
 
 a{
-  color: orange;
-  cursor: grab;
+  color: rgb(2, 0, 79);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 
 a:hover{
-  color: darkgoldenrod;
+  color: mediumpurple;
 }
 
 
@@ -203,4 +271,35 @@ h5{
 .avatar_img{
   overflow: hidden;
   border-radius: 50%;
+}
+
+
+.header_text{
+  margin: 150px 0px 0px 0px;
+  text-align: center;
+  clear: both;
+  font-size: 26px;
+  color: rgb(2, 0, 79);
+}
+
+
+.navbar_links{
+  margin-left: 10px;
+  font-size: 18px;
+  color: lightslategray;
+}
+
+
+.navbar_links:hover{
+  color: mediumpurple;
+}
+
+
+
+.assign_lesson_button{
+  margin: 20px 50px 10px 50px;
+  background-color: mediumblue;
+  color: white;
+  width: 150px;
+  height: 40px;
 }
