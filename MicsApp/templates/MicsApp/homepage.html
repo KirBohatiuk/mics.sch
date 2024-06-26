@@ -10,7 +10,25 @@
 </head>
 <body>
   {% block content %}
-  <div class="body_img">Mics.sch <br>Become a master!</div>
+    <div class="assign_link_homepage_bg">
+      <div class="assign_link_homepage_text_bg">
+        <div class="header_text">Шахова онлайн-школа</div>
+        <div class="div_assign_block">
+          <div class="text_assign">Разом з тобою зануримося у цікавий світ шахів, де навчимося логічно та стратегічно мислити. </div>
+          <div class="button_container">
+            <button class="assign_lesson_button_home_page" onclick="window.location.href='{% url 'assign-lesson' %}'">Записатися на послугу</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="s1" class="why_us"></div>
+    <div class="header_text">Наша команда</div>
+    <div class="centered_text">Цілеспрямовані. Молоді. Амбітні.</div>
+    <div class="img_ihor"></div>
+    <div class="img_kir"></div>
+    <div class="img_ehor"></div>
+    <div class="img_ehor_text"></div>
+    <div class="img_lina"></div>
   {% endblock %}
 </body>
 </html>

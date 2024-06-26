@@ -12,18 +12,41 @@
   {% block content %}
     <div class="header_text">Наші послуги</div>
     <div class="blog_post_bg">
-      <div class="blog_post_img"><div class="indiv_resized"></div></div>
-      <div class="blog_post_text_block"></div>
-      <div class="blog_post_img"><div class="indiv_resized"></div></div>
-      <div class="blog_post_text_block"></div>
-      <div class="blog_post_img"><div class="group_resized"></div></div>
-      <div class="blog_post_text_block"></div>
-    <div class="blog_post_img"><div class="group_resized"></div></div>
+      <a href="{% url 'homepage' %}">
+        <div class="blog_post_img"><div class="indiv_resized"></div></div>
+      </a>
+      <div class="blog_post_text_block">
+        <div class="blog_text_topic"><a href="{% url "homepage" %}">Індивідуальні шахові зайняття</a></div>
+        <div class="blog_separation_line"></div>
+        <div class="blog_text_main">1 год.</div>
+        <div><button class="assign_lesson_button" onclick="window.location.href='https://t.me/Umpalymp'">Записатися на послугу</button></div>
+      </div>
+      <a href="{% url 'homepage' %}">
+        <div class="blog_post_img"><div class="indiv_resized"></div></div>
+      </a>
+      <div class="blog_post_text_block">
+        <div class="blog_text_topic"><a href="{% url "homepage" %}">Індивідуальні шахові зайняття</a></div>
+        <div class="blog_separation_line"></div>
+        <div class="blog_text_main">30хв</div>
+        <div><button class="assign_lesson_button" onclick="window.location.href='https://t.me/Umpalymp'">Записатися на послугу</button></div>
+      </div>
+      <a href="{% url 'homepage' %}">
+        <div class="blog_post_img"><div class="group_resized"></div></div>
+      </a>
       <div class="blog_post_text_block">
         <div class="blog_text_topic"><a href="{% url "homepage" %}">Групові зайняття з шахів (молодша група)</a></div>
         <div class="blog_separation_line"></div>
         <div class="blog_text_main">Пн, Ср - 19.00</div>
-        <div><button class="assign_lesson_button" onclick="">G</button></div>
+        <div><button class="assign_lesson_button" onclick="window.location.href='https://t.me/Umpalymp'">Записатися на послугу</button></div>
+      </div>
+      <a href="{% url 'homepage' %}">
+        <div class="blog_post_img"><div class="group_resized"></div></div>
+      </a>
+      <div class="blog_post_text_block">
+        <div class="blog_text_topic"><a href="{% url "homepage" %}">Групові зайняття з шахів (молодша група)</a></div>
+        <div class="blog_separation_line"></div>
+        <div class="blog_text_main">Пн, Ср - 19.00</div>
+        <div><button class="assign_lesson_button" onclick="window.location.href='https://t.me/Umpalymp'">Записатися на послугу</button></div>
       </div>
     </div>
   {% endblock %}

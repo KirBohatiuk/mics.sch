@@ -39,7 +39,8 @@ class Post(models.Model):
         on_delete=models.CASCADE,
         related_name='posts',
     )
-    text = models.CharField(verbose_name="post text", max_length=200)
+    topic = models.CharField(verbose_name="topic", blank=True, max_length=50, null=True)
+    text = models.CharField(verbose_name="text", blank=False, max_length=200)
     image = models.ImageField(verbose_name="post image", blank=True, null=True)
     creation_date = models.DateTimeField(auto_now_add=True, verbose_name="Creation date")
 
@@ -57,5 +58,5 @@ class Post(models.Model):
         right = (width + size) / 2
         bottom = (height + size) / 2
         img = img.crop((left, top, right, bottom))
-        img = img.resize((300, 300), resample=Image.LANCZOS)
+        img = img.resize((458, 399), resample=Image.LANCZOS)
         img.save(self.image.path)

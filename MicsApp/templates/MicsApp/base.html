@@ -8,18 +8,19 @@
 </head>
 <body>
   <div class="header">
-    <a href="{% url "homepage" %}"><div class="logo_header"></div></a>
-    <div class="brand_header">MICS SCHOOL</div>
-    <div class="blank"></div>
-    <div class="login"><a href="{% url "homepage" %}"><div class="login_pick">Log In</div></a></div>
+    <a href="{% url "homepage" %}"><div class="brand_header">MICS SCHOOL</div></a>
   </div>
   <div class="navbar">
     <a class="navbar_links" href="{% url "homepage" %}">Головна</a>
-    <a class="navbar_links" href="{% url "blog" %}">Чому ми?</a>
     <a class="navbar_links" href="{% url "assign-lesson" %}">Запис онлайн</a>
-    <a class="navbar_links" href="{% url "contact-info" %}">Блог</a>
+    <a class="navbar_links" href="{% url "blog" %}">Блог</a>
   </div>
   {% block content %}
   {% endblock %}
+  <div class="footer">
+    <div class="footer_brand">MICS.SCH</div>
+    <br>
+    <a href="mailto:chessmics@gmail.com">chessmics@gmail.com</a>
+  </div>
 </body>
 </html>

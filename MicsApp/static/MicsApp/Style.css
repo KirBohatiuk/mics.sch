@@ -2,26 +2,20 @@
   margin: 30px 300px 0px 300px;
   border-bottom: 1px solid midnightblue;
   height: 100px;
-
 }
 
 
 .logo_header{
-  width: 10%;
+  width: 20%;
   height: 100%;
   background-image: url("logo.png");
   background-size: contain;
   background-repeat: no-repeat;
+  line-height: 100px;
   float: left;
   cursor: pointer;
 }
 
-
-.blank{
-  height: 100%;
-  width: 60%;
-  float: left;
-}
 
 .login {
   float: left;
@@ -50,18 +44,24 @@
 
 
 .brand_header{
-  width: 20%;
+  width: 100%;
   height: 100%;
   float: left;
   color: rgb(2, 0, 79);
-  font-size: 38px;
+  font-size: 80px;
+  line-height: 90px;
   font-weight: bold;
-
+  text-align: center;
 }
 
 
 body{
   background-color: rgb(238, 234, 246);
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -71,38 +71,6 @@ body{
   width: 100%;
   color: rgb(2, 0, 79);
   margin: 2px;
-}
-
-
-.body_img{
-  margin: 1px;
-  background-image: url("1aa19b2e443cc366fd0773098ee9327c.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: center;
-  height: 535px;
-  width: calc(100% - 2px);
-  clear: both;
-  text-align: center;
-  align-content: space-evenly;
-  font-size: 36px;
-  font-style: italic;
-  color: white;
-}
-
-
-.blog_body_bg_img{
-  margin: 1px;
-  background-image: url("blog.png");
-  background-size: cover;
-  height: 900px;
-  width: calc(100% - 2px);
-  clear: both;
-  text-align: center;
-  align-content: center;
-  font-size: 36px;
-  font-style: italic;
-  color: white;
 }
 
 
@@ -132,11 +100,20 @@ body{
 }
 
 
+.indiv_resized:hover{
+  filter: brightness(90%);
+}
+
 .group_resized{
   background-image: url("gruppa.png");
   background-size: cover;
   height: 100%;
   width: 100%;
+}
+
+
+.group_resized:hover{
+  filter: brightness(90%);
 }
 
 
@@ -188,22 +165,6 @@ body{
 }
 
 
-.contact_bg{
-  margin: 1px;
-  background-image: url("img_4.png");
-  background-size: contain;
-  background-position: center;
-  height: 600px;
-  width: calc(100% - 2px);
-  clear: both;
-  text-align: left;
-  align-content: center;
-  font-size: 36px;
-  font-style: italic;
-  color: white;
-}
-
-
 p{
   margin-left: 100px;
   font-size: 36px;
@@ -248,23 +209,8 @@ h5{
 }
 
 .footer{
-  width: calc(100% - 2px);
-  background-color: dimgray;
-  height: 50px;
-  clear: both;
-  margin: 1px;
-  line-height: 50px;
-  text-align: center;
-  font-size: 26px;
-  color: white;
-}
-
-
-.div_sponsor{
-  text-align: center;
-  clear: both;
-  font-size: 26px;
-  color: orange;
+  margin-left: 320px;
+  margin-bottom: 50px;
 }
 
 
@@ -275,10 +221,10 @@ h5{
 
 
 .header_text{
-  margin: 150px 0px 0px 0px;
+  margin: 80px 0px 0px 0px;
   text-align: center;
   clear: both;
-  font-size: 26px;
+  font-size: 42px;
   color: rgb(2, 0, 79);
 }
 
@@ -295,11 +241,169 @@ h5{
 }
 
 
-
 .assign_lesson_button{
   margin: 20px 50px 10px 50px;
   background-color: mediumblue;
   color: white;
-  width: 150px;
+  width: 200px;
   height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.assign_lesson_button:hover{
+  filter: brightness(90%);
+}
+
+
+.footer_brand{
+  width: 20%;
+  height: 100%;
+  color: rgb(2, 0, 79);
+  font-size: 38px;
+  font-weight: bold;
+}
+
+
+.assign_link_homepage_bg{
+  margin: 40px 0px 0px 0px;
+  background-image: url("homepage_bg1.png");
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+
+.assign_link_homepage_text_bg{
+  background-color: rgb(238, 234, 246);
+  height: 250px;
+  width: 800px;
+  align-items: center; /* Center text vertically if needed */
+  justify-content: center; /* Center text horizontally if needed */
+}
+
+
+.centered_text{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.why_us{
+  margin: 0px 0px 0px 0px;
+  background-image: url("homepage_bg2.png");
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+
+.team{
+  margin: 40px 40px 40px 40px;
+  float: left;
+  width: calc(50% - 80px);
+  height: 350px;
+  background-color: white;
+}
+
+
+.img_team{
+  height: 100%;
+  width: 100%;
+}
+
+
+.img_ihor{
+  margin: 40px 40px 40px 40px;
+  width: calc(50% - 80px);
+  height: 350px;
+  background-image: url("igor.png");
+  background-size: cover;
+  float: left;
+}
+
+
+.img_kir{
+  margin: 40px 40px 40px 40px;
+  width: calc(50% - 80px);
+  height: 350px;
+  background-image: url("kir.png");
+  background-size: cover;
+  float: left;
+}
+
+.img_ehor{
+  margin: 40px 0px 40px 40px;
+  width: calc(25% - 40px);
+  height: 350px;
+  background-image: url("ehor_img.png");
+  background-size: cover;
+  float: left;
+}
+
+
+.img_ehor_text{
+  margin: 40px 40px 40px 0px;
+  width: calc(25% - 40px);
+  height: 350px;
+  background-image: url("ehor_text.png");
+  background-size: cover;
+  float: left;
+}
+
+
+.img_lina{
+  margin: 40px 40px 40px 40px;
+  width: calc(50% - 80px);
+  height: 350px;
+  background-image: url("lina.png");
+  background-size: cover;
+  float: left;
+}
+
+.div_assign_block{
+  margin: 20px;
+  height: 100px;
+  width: calc(100% - 40px);
+}
+
+
+.text_assign{
+  width: 60%;
+  height: 100%;
+  color: rgb(2, 0, 79);
+  line-height: 100%;
+  font-size: 22px;
+  float: left;
+}
+
+
+.button_container{
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+
+.assign_lesson_button_home_page{
+  margin-left: 50px;
+  background-color: mediumblue;
+  color: white;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
